@@ -50,26 +50,26 @@ A X-Y scatterplot is used to contrast two sets of data, and usually to determine
 
 #### Scatterplot using R
 
-# ggplot requires an X and Y column from a data frame (or something similar) for a scatterplot
+ggplot requires an X and Y column from a data frame (or something similar) for a scatterplot
 
-surveys <- read.csv('scatterplot4R.csv')
+        surveys <- read.csv('scatterplot4R.csv')
 
-head(surveys)
-# record_id month day year plot_id species_id sex hindfoot_length weight   genus  species taxa plot_type
-# 1       845     5   6 1978       2         NL   M              32    204 Neotoma albigula Rodent   Control
-# 2      1164     8   5 1978       2         NL   M              34    199 Neotoma albigula Rodent   Control
-# 3      1261     9   4 1978       2         NL   M              32    197 Neotoma albigula Rodent   Control
-# 4      1756     4  29 1979       2         NL   M              33    166 Neotoma albigula Rodent   Control
-# 5      1818     5  30 1979       2         NL   M              32    184 Neotoma albigula Rodent   Control
-# 6      1882     7   4 1979       2         NL   M              32    206 Neotoma albigula Rodent   Control
+        head(surveys)
+        record_id month day year plot_id species_id sex hindfoot_length weight   genus  species taxa plot_type
+        845     5   6 1978       2         NL   M              32    204 Neotoma albigula Rodent   Control
+        1164     8   5 1978       2         NL   M              34    199 Neotoma albigula Rodent   Control
+        1261     9   4 1978       2         NL   M              32    197 Neotoma albigula Rodent   Control
+        1756     4  29 1979       2         NL   M              33    166 Neotoma albigula Rodent   Control
+        1818     5  30 1979       2         NL   M              32    184 Neotoma albigula Rodent   Control
+        1882     7   4 1979       2         NL   M              32    206 Neotoma albigula Rodent   Control
 
-# plot the data
-ggplot(surveys, aes(x=weight, y=hindfoot_length)) + geom_point()
+        # plot the data
+        ggplot(surveys, aes(x=weight, y=hindfoot_length)) + geom_point()
 
-# change point size:
-ggplot(surveys, aes(x=weight, y=hindfoot_length))  + geom_point(shape=1, size=2)
+        # change point size:
+        ggplot(surveys, aes(x=weight, y=hindfoot_length))  + geom_point(shape=1, size=2)
 
-# see geom_point_values.png for a listing of possible shapes
+        # see geom_point_values.png for a listing of possible shapes
 
 Optional Challenge Questions:
 1) Can you use a categorical value instead?
