@@ -1,0 +1,7 @@
+record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,species,taxa,type
+845,5,6,1978,2,NL,M,32,204,Neotoma,albigula,Rodent,Control
+1164,8,5,1978,2,NL,M,34,199,Neotoma,albigula,Rodent,Control
+1261,9,4,1978,2,NL,M,32,197,Neotoma,albigula,Rodent,Control
+1756,4,29,1979,2,NL,M,33,166,Neotoma,albigula,Rodent,Treated
+1818,5,30,1979,2,NL,M,32,184,Neotoma,albigula,Rodent,Treated
+1882,7,4,1979,2,NL,M,32,206,Neotoma,albigula,Rodent,Treated
